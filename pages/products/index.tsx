@@ -1,10 +1,10 @@
-const Home = () => {
+const Products = () => {
   return (
     <div>
       <h1 className="text-9xl">Liberty For Slaves</h1>
-      <p>This is a home page.</p>
+      <p>This is a products page.</p>
     </div>
   );
 };
 
-export default Home;
+export default Products;
