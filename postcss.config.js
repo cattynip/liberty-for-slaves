@@ -1,8 +1,8 @@
 const options = {
   plugins: {
     tailwindcss: {},
-    autoprefixer: {},
-  },
+    autoprefixer: {}
+  }
 };
 
 module.exports = options;

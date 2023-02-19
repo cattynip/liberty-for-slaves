@@ -1,14 +1,14 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Anchor from "./Anchor";
+import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import Anchor from './Anchor';
 
 const Header = () => {
   const router = useRouter();
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-black py-4 pl-3">
-      <div className="flex space-x-5">
+    <header className="sticky top-0 left-0 w-full bg-black py-3 pl-3">
+      <div className="flex items-center justify-center space-x-5">
         <HeaderItem name="Home" linkTo="/" pathName={router.pathname} />
         <HeaderItem
           name="About Us"
@@ -46,8 +46,8 @@ const HeaderItem = ({ name, linkTo, pathName }: IHeaderItemProps) => {
   return (
     <div className="relative inline">
       <div
-        className={`px-4 py-1 text-lg transition-colors ${
-          isMatched ? "text-black" : "text-white"
+        className={`px-3 py-0.5 text-lg transition-colors ${
+          isMatched ? 'text-black' : 'text-white'
         }`}
       >
         <Anchor href={linkTo}>{name}</Anchor>
@@ -58,8 +58,8 @@ const HeaderItem = ({ name, linkTo, pathName }: IHeaderItemProps) => {
             <motion.div
               animate={{
                 transition: {
-                  delay: 0.2,
-                },
+                  delay: 0.2
+                }
               }}
               className="absolute top-0 left-0 -z-10 h-full w-full rounded-sm bg-white"
               layoutId="header-item"

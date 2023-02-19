@@ -1,4 +1,4 @@
-import Header from "@components/header";
+import Header from '@components/header';
 
 interface ILayoutProps {
   children: React.ReactNode;
@@ -6,9 +6,9 @@ interface ILayoutProps {
 
 const Layout = ({ children }: ILayoutProps) => {
   return (
-    <div>
+    <div className="bg-black text-white">
       <Header />
-      {children}
+      <main className="mx-auto max-w-5xl px-5 py-8">{children}</main>
     </div>
   );
 };

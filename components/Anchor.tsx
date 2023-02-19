@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { AnchorHTMLAttributes } from "react";
+import Link from 'next/link';
+import { AnchorHTMLAttributes } from 'react';
 
 interface IAnchorProps {
   href: string;
