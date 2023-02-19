@@ -7,7 +7,7 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-black py-3 pl-3">
+    <header className="sticky top-0 left-0 z-10 w-full bg-black py-3 pl-3">
       <div className="flex items-center justify-center space-x-5">
         <HeaderItem name="Home" linkTo="/" pathName={router.pathname} />
         <HeaderItem
