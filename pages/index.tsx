@@ -23,12 +23,7 @@ const Home = () => {
           />
         </div>
       </Section>
-      <SectionSeparater
-        pathD={
-          'M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z'
-        }
-        nextSectionMainColour="white"
-      />
+      <SectionSeparater waveType="wave" nextSectionMainColour="white" />
       <Section className="bg-white text-black">
         <h2 className="text-5xl font-black">We are a group like...</h2>
         <div className="grid grid-cols-1 gap-3 py-20 md:grid-cols-2 lg:grid-cols-3 lg:pt-16">
@@ -50,10 +45,7 @@ const Home = () => {
           />
         </div>
       </Section>
-      <SectionSeparater
-        pathD={'M649.97 0L550.03 0 599.91 54.12 649.97 0z'}
-        nextSectionMainColour="white"
-      />
+      <SectionSeparater waveType="triangle" nextSectionMainColour="white" />
       <Section className="-pt-20">
         <h2 className="text-5xl font-black">We have done...</h2>
         <div className="pt-20 md:flex md:space-x-10">
@@ -69,7 +61,7 @@ const Home = () => {
           />
         </div>
       </Section>
-      <div className="h-20 w-full bg-gradient-to-b from-black to-white" />
+      <SectionSeparater waveType="gradient" nextSectionMainColour="white" />
       <Section className="bg-white pt-6 text-black">
         <div className="relative pt-4">
           <h2 className="text-5xl font-black">We have informed ourselves...</h2>
