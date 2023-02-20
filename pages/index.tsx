@@ -4,6 +4,7 @@ import HaveDoneElement from '@components/HaveDoneElement';
 import ImageDescriptionElement from '@components/ImageDescritionElement';
 import Section from '@components/Section';
 import SectionSeparater from '@components/SectionSeparater';
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -23,7 +24,12 @@ const Home = () => {
           />
         </div>
       </Section>
-      <SectionSeparater waveType="wave" nextSectionMainColour="white" />
+      <Image
+        src={'/divider/wave.svg'}
+        width={1080}
+        height={1080}
+        alt="SectionDivider"
+      />
       <Section className="bg-white text-black">
         <h2 className="text-5xl font-black">We are a group like...</h2>
         <div className="grid grid-cols-1 gap-3 py-20 md:grid-cols-2 lg:grid-cols-3 lg:pt-16">
@@ -45,7 +51,12 @@ const Home = () => {
           />
         </div>
       </Section>
-      <SectionSeparater waveType="triangle" nextSectionMainColour="white" />
+      <Image
+        src={'/divider/triangle.svg'}
+        width={1080}
+        height={1080}
+        alt="SectionDivider"
+      />
       <Section className="-pt-20">
         <h2 className="text-5xl font-black">We have done...</h2>
         <div className="pt-20 md:flex md:space-x-10">
