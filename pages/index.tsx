@@ -1,12 +1,14 @@
 import ExplainationElement from '@components/ExplainationElement';
 import GradientBackgroundImg from '@components/GradientBackgroundImg';
+import Section from '@components/Section';
+import SectionSeparater from '@components/SectionSeparater';
 
 const Home = () => {
   return (
-    <div className="h-[1000vh] space-y-20">
-      <section>
-        <div className="flex flex-col space-x-10 space-y-10 md:flex-row md:space-y-0">
-          <h1 className="flex flex-col items-center space-y-1 text-center text-8xl font-black md:items-start">
+    <div className="h-[1000vh]">
+      <Section>
+        <div className="flex flex-col md:flex-row md:space-y-0">
+          <h1 className="flex flex-col items-center space-y-1 pb-10 text-center text-8xl font-black md:items-start md:pr-20">
             <span>Liberty</span>
             <span>For</span>
             <span>Slaves</span>
@@ -18,9 +20,15 @@ const Home = () => {
             height={1080}
           />
         </div>
-      </section>
-      <section>
-        <h2 className="text-5xl font-black">We are...</h2>
+      </Section>
+      <SectionSeparater
+        pathD={
+          'M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z'
+        }
+        nextSectionMainColour="white"
+      />
+      <Section className="bg-white text-black">
+        <h2 className="text-5xl font-black">We are a group like...</h2>
         <div className="grid grid-cols-1 gap-3 py-20 md:grid-cols-2 lg:grid-cols-3 lg:pt-16">
           <ExplainationElement
             bigText={['Abolitionist', 'Organization']}
@@ -39,7 +47,14 @@ const Home = () => {
             description="Are to create a slavery-free wourld where everyone has freedom from oppression"
           />
         </div>
-      </section>
+      </Section>
+      <SectionSeparater
+        pathD={'M649.97 0L550.03 0 599.91 54.12 649.97 0z'}
+        nextSectionMainColour="white"
+      />
+      <Section className="-pt-20">
+        <h2>We have done</h2>
+      </Section>
     </div>
   );
 };
