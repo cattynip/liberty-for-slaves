@@ -1,12 +1,13 @@
 import ExplainationElement from '@components/ExplainationElement';
 import GradientBackgroundImg from '@components/GradientBackgroundImg';
 import HaveDoneElement from '@components/HaveDoneElement';
+import ImageDescriptionElement from '@components/ImageDescritionElement';
 import Section from '@components/Section';
 import SectionSeparater from '@components/SectionSeparater';
 
 const Home = () => {
   return (
-    <div className="h-[1000vh]">
+    <div>
       <Section>
         <div className="flex flex-col md:flex-row md:space-y-0">
           <h1 className="flex flex-col items-center space-y-1 pb-10 text-center text-8xl font-black md:items-start md:pr-20">
@@ -64,6 +65,21 @@ const Home = () => {
           <HaveDoneElement
             imageSrc="/have-done/song.jpg"
             name="Song"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          />
+        </div>
+      </Section>
+      <div className="h-20 w-full bg-gradient-to-b from-black to-white" />
+      <Section className="bg-white pt-6 text-black">
+        <div className="relative pt-4">
+          <h2 className="text-5xl font-black">We have informed ourselves...</h2>
+          <ImageDescriptionElement
+            title="Instagram"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            className="bg-gradient-to-r from-[#833AB4] via-[#F56040] to-[#FFC837] bg-clip-text text-transparent"
+          />
+          <ImageDescriptionElement
+            title="Website"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
           />
         </div>
