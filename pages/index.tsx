@@ -1,5 +1,6 @@
 import ExplainationElement from '@components/ExplainationElement';
 import GradientBackgroundImg from '@components/GradientBackgroundImg';
+import HaveDoneElement from '@components/HaveDoneElement';
 import Section from '@components/Section';
 import SectionSeparater from '@components/SectionSeparater';
 
@@ -53,7 +54,19 @@ const Home = () => {
         nextSectionMainColour="white"
       />
       <Section className="-pt-20">
-        <h2>We have done</h2>
+        <h2 className="text-5xl font-black">We have done...</h2>
+        <div className="pt-20 md:flex md:space-x-10">
+          <HaveDoneElement
+            imageSrc="/have-done/example.jpg"
+            name="Example"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          />
+          <HaveDoneElement
+            imageSrc="/have-done/song.jpg"
+            name="Song"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          />
+        </div>
       </Section>
     </div>
   );
