@@ -31,7 +31,7 @@ const Home = () => {
       <Image
         src={'/divider/wave.svg'}
         width={1080}
-        height={1080}
+        height={300}
         alt="SectionDivider"
       />
       <Section className="bg-white text-black">
@@ -58,7 +58,7 @@ const Home = () => {
       <Image
         src={'/divider/triangle.svg'}
         width={1080}
-        height={1080}
+        height={200}
         alt="SectionDivider"
       />
       <Section className="-pt-20">
