@@ -6,28 +6,30 @@ import Anchor from './Anchor';
 const Header = () => {
   const router = useRouter();
 
-  return (
-    <header className="sticky top-0 left-0 z-10 w-full bg-black py-3 pl-3">
-      <div className="flex items-center justify-center space-x-5">
-        <HeaderItem name="Home" linkTo="/" pathName={router.pathname} />
-        <HeaderItem
-          name="About Us"
-          linkTo="/about"
-          pathName={router.pathname}
-        />
-        <HeaderItem
-          name="Products"
-          linkTo="/products"
-          pathName={router.pathname}
-        />
-        <HeaderItem
-          name="Presentation"
-          linkTo="/presentation"
-          pathName={router.pathname}
-        />
-      </div>
-    </header>
-  );
+  return null;
+
+  // return (
+  //   <header className="sticky top-0 left-0 z-10 w-full bg-black py-3 pl-3">
+  //     <div className="flex items-center justify-center space-x-5">
+  //       <HeaderItem name="Home" linkTo="/" pathName={router.pathname} />
+  //       <HeaderItem
+  //         name="About Us"
+  //         linkTo="/about"
+  //         pathName={router.pathname}
+  //       />
+  //       <HeaderItem
+  //         name="Products"
+  //         linkTo="/products"
+  //         pathName={router.pathname}
+  //       />
+  //       <HeaderItem
+  //         name="Presentation"
+  //         linkTo="/presentation"
+  //         pathName={router.pathname}
+  //       />
+  //     </div>
+  //   </header>
+  // );
 };
 
 interface IHeaderItemProps {
